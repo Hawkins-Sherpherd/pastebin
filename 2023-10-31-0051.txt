@@ -1,4 +1,6 @@
 # 假设你的主配置文件是直接从 DN42 Wiki 上抄来的
+# Extended Next-hop 默认为开启状态，倘若没有启用，则在下面的配置中加上这样的一行：
+#       extended next hop;
 protocol bgp AS_4242423947_v6 from dnpeers {
         neighbor fe80::3947:2%wg_AS4242423947 as 4242423947;
         extended next hop;
